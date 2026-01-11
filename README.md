@@ -81,18 +81,6 @@ python calculator.py
 ```
 3. Run tests:
 ```bash
-python -m pytest
-```
-```
-
-calculator.py
-```python
-"""
-calculator.py
-
-Simple CLI to calculate average marks with input validation.
-"""
-
 def calculate_average(total_marks: int, total_subjects: int) -> float:
     """
     Calculate average marks.
@@ -104,8 +92,8 @@ def calculate_average(total_marks: int, total_subjects: int) -> float:
         raise ValueError("Total subjects cannot be zero")
     if total_subjects < 0:
         raise ValueError("Total subjects cannot be negative")
+    
     return total_marks / total_subjects
-
 
 def main():
     try:
@@ -120,16 +108,12 @@ def main():
 
     try:
         average = calculate_average(marks, subjects)
+        print(f"Average marks: {average}")
     except ValueError as exc:
         print(f"Error: {exc}")
-    else:
-        print("Average marks:", average)
-
 
 if __name__ == "__main__":
-    main()
-```
-
+    main()    
 tests/test_calculator.py
 ```python
 import pytest
