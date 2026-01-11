@@ -204,9 +204,3 @@ gh issue create --title "Program crashes on zero subjects input in calculator.py
 ```bash
 python -m pytest -q
 ```
-
-
-
-Would you like me to push and publish the draft issue now (I will use branch fix/zero-division), or do you want to run the commands yourself in your Codespace?
-
-Copilot is powered by AI, so mistakes are possible. Leave a comment via the 👍 👎 to share your feedback and help improve the experience.
